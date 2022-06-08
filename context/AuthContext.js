@@ -46,7 +46,7 @@ const AuthProvider = ({ children }) => {
   
   return (
     <AuthContext.Provider value={authContextValues}>
-      <Head>{userLoading && <title>Loading...</title>}</Head>
+      
       {userLoading ? <MainLoading /> : children}
     </AuthContext.Provider>
   );
