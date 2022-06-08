@@ -1,0 +1,67 @@
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  @apply bg-gray-100;
+}
+
+.wrapper {
+  max-width: 800px;
+  width: 90%;
+  @apply mx-auto;
+}
+
+.wrapper-sm {
+  max-width: 500px;
+  width: 90%;
+  @apply mx-auto;
+}
+
+.btn-blue {
+  @apply bg-blue-500  text-white px-5 py-3 font-semibold rounded-md text-center hover:bg-blue-700;
+}
+
+.chat-room {
+  height: calc(100vh - 80px);
+  @apply text-white;
+}
+
+@media (max-width: 500px) {
+  .chat-room {
+    height: calc(100vh - 180px);
+  }
+}
+
+.message {
+  max-width: 80%;
+  @apply rounded-md  text-white font-semibold overflow-hidden;
+}
+
+.message span {
+  @apply bg-stone-200 text-black block text-center py-1 px-3 text-xs;
+}
+
+.my-message {
+  @apply ml-auto;
+}
+
+.my-message {
+  @apply bg-yellow-500;
+}
+
+.message p {
+  @apply px-4 py-2;
+}
+
+.message-other {
+  @apply bg-slate-600 mr-auto;
+}
+
+.message:last-child {
+  @apply mb-12;
+}
+/*# sourceMappingURL=main.css.map */
